@@ -16,11 +16,13 @@ nationalities = st.sidebar.multiselect('Show Player from Nationalities?', df['Na
 new_df = df[(df['Club'].isin(clubs)) & (df['Nationality'].isin(nationalities))]
 st.write(new_df)
 
+'''
 # Create distplot with custom bin_size
 fig = px.scatter(new_df, x ='Overall',y='Age',color='Name')
-
+'''
 '''
 ### Here is a simple chart between player age and overall
 '''
-
+'''
 st.plotly_chart(fig)
+'''
